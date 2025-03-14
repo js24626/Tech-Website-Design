@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woofye the Agent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="relative w-full min-h-screen overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class=" fixed  left-0 w-full p-4 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-white text-2xl font-bold">
+                <img src="/Images/nineblocks.png" alt="Logo" class="h-16">
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 text-white text-lg">
+               
+               
+                <a href="#" class="hover:text-gray-300">Home</a>
+                <a href="#" class="hover:text-gray-300">ROADMAP</a>
+                <a href="#" class="hover:text-gray-300">FAQs</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white text-2xl focus:outline-none" id="menu-btn">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Slideshow Container -->
+    <div class="relative fade-in w-full h-full">
+        <div class="absolute inset-0">
+            <img id="slide-img" src="/Images/1.png" class="w-full h-full object-cover fade" alt="Background">
+        </div>
+        <!-- Centered Text -->
+        <div id="slide-container" class="absolute  inset-0 flex flex-col justify-center items-center text-center text-white px-6">
+            <h1 class="text-4xl md:text-6xl font-bold">
+                Woofye the Agent Bridging Efficiency with Blockchain
+            </h1>
+            <p id="dynamic-text" class="text-lg md:text-5xl font-bold text-[#FF9900] mt-4 transition-opacity duration-700 ease-in-out">
+                Decentralization
+            </p>
+            <p id="slide-text" class="text-lg md:text-3xl mt-12 font-bold transition-opacity duration-700 ease-in-out">
+                Optimizing Solana volume with cost-effective and efficient technology.
+            </p>
+        </div>
+        <!-- Navigation Arrows -->
+        <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 p-4 rounded-full text-white">&#10094;</button>
+        <button id="next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 p-4 rounded-full text-white">&#10095;</button>
+    </div>
+
+    <!-- Benefits Section -->
+    <section class=" py-28 px-6"  style="background-image: url('/Images/BG.png');">
+        <div class="container mx-auto  text-center">
+            <h2 class="text-3xl md:text-4xl sniglet-regular text-[#00BFFF] mb-12 mt-12">
+                Transforming Solana with VEE Technology
+            </h2>
+            <p class="text-lg  text-gray-400 md:text-xl mt-12  transition-opacity duration-700 ease-in-out"> Shaping Tomorrow with Efficient, Low-Cost Blockchain Solutions</p>
+            <div class="grid grid-cols-1 sniglet-regular sm:grid-cols-2 mt-16 md:grid-cols-3 gap-12">
+                <!-- Benefit 1 -->
+                <div class="flex flex-col items-center text-white space-y-4">
+                    <img src="/Images/log-removebg-preview.png" alt="Speed" class="h-20 transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                    <h3 class="text-xl   text-[#00BFFF]">Volume Efficiency Engine</h3>
+                    <p class="text-md text-gray-300">Empowering Solana with advanced, efficiency-driven computation for smarter and more cost-effective blockchain operations.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="flex flex-col items-center text-white space-y-4">
+                    <img src="/Images/log2.png" alt="Security" class="h-20 transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                    <h3 class="text-xl   text-[#00BFFF]">Smart Integration</h3>
+                    <p class="text-md text-gray-300">Seamlessly blending decentralized governance with efficient volume optimization for smarter, community-driven trading solutions.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="flex flex-col items-center text-white space-y-4">
+                    <img src="/Images/log3.png" alt="Transparency" class="h-20 transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                    <h3 class="text-xl   text-[#00BFFF]">VOP Consensus</h3>
+                    <p class="text-md text-gray-300">Revolutionizing trading efficiency with the Volume Optimization Protocol, a breakthrough in cost-effective and precise blockchain operations.</p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="flex flex-col items-center text-white space-y-4">
+                    <img src="/Images/log4.png" alt="Speed" class="h-20 transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                    <h3 class="text-xl   text-[#00BFFF]">Transparent Vol. Framework
+
+                    </h3>
+                    <p class="text-md text-gray-300">Redefining trust with an open, auditable, and efficient system for intelligent volume optimization on Solana.</p>
+                </div>
+                <!-- Benefit 5 -->
+                <div class="flex flex-col items-center text-white space-y-4">
+                    <img src="/Images/log5.png" alt="Security" class="h-20 transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                    <h3 class="text-xl   text-[#00BFFF]">Woofye the Agent Roadmap</h3>
+                    <p class="text-md text-gray-300">Paving the way for Solana's most efficient volume optimization with a clear and strategic development plan.</p>
+                </div>
+                <!-- Benefit 6 -->
+                <div class="flex flex-col items-center text-white space-y-4">
+                    <img src="/Images/log6.png" alt="Transparency" class="h-20 transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                    <h3 class="text-xl   text-[#00BFFF]">Referral Program</h3>
+                    <p class="text-md  text-gray-300">Earn rewards by inviting others to join Woofye the Agent and drive efficient volume optimization on Solana together.</p>
+                </div>
+            </div>
+        </div>
+   
+        <section class="relative fade-in w-full mt-20 py-20 bg-transparent">
+            <h2 class="text-center text-5xl sniglet-regular text-white mb-20  tracking-wide">
+                Woofye Roadmap
+            </h2>
+        
+            <div class="container mx-auto sniglet-regular py-12 px-6 relative">
+                <!-- Vertical Timeline Line -->
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-[#00BFFF] h-full"></div>
+        
+                <!-- Phase 1 -->
+                <div class="relative flex justify-between items-center mb-20">
+                    <!-- Phase Title (Left Side) -->
+                    <div class="w-1/2 text-right pr-10">
+                        <p class="text-3xl  text-[#00BFFF]">Core Bot Development</p>
+                        <h2 class="  text-2xl text-gray-400">Phase 3</h2>
+                    </div>
+        
+                    <!-- Timeline Circle -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#00BFFF] rounded-full border-4 border-gray-900"></div>
+        
+                    <!-- Phase Content (Right Side) -->
+                    <div class="w-1/2 pl-10">
+                        <div class="relative bg-transparent p-6 rounded-lg shadow-lg transition-transform hover:scale-105 hover:shadow-[#00BFFF]">
+                            <ul class="mt-4 space-y-3 text-gray-300">
+                                <li class="flex items-start">
+                                    <span class="w-2 h-2 bg-[#00BFFF] rounded-full mr-3 mt-2"></span>
+                                    <span>Deployment of the <strong class="text-white">Woofye Volume Bot (VOP)</strong> for efficient and cost-effective trading volume optimization.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-2 h-2 bg-[#00BFFF] rounded-full mr-3 mt-2"></span>
+                                    <span>Launch of the <strong class="text-white">Referral Program</strong> to grow the user base and reward community engagement.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-2 h-2 bg-[#00BFFF] rounded-full mr-3 mt-2"></span>
+                                    <span>Integration of <strong class="text-white">LP Token Burn Functionality</strong> to enable deflationary mechanisms for liquidity pools.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+                <!-- Phase 2 -->
+                <div class="relative flex justify-between items-center mb-20">
+                    <div class="w-1/2 text-right pr-10">
+                        <div class="relative bg-transparent p-6 rounded-lg shadow-lg transition-transform hover:scale-105 hover:shadow-[#00BFFF]">
+                            <ul class="mt-4 space-y-3 text-gray-300">
+                                <li class="flex items-start">
+                                    <span class="w-2 h-2 bg-[#00BFFF] rounded-full mt-2"></span>
+                                    <span class="text-left w-full pl-3">Implementation of <strong class="text-white">Strategic Marketing</strong> to drive brand awareness and customer engagement.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-2 h-2 bg-[#00BFFF] rounded-full mt-2"></span>
+                                    <span class="text-left w-full pl-3">Collaboration with <strong class="text-white">Influencers & Partners</strong> to expand market reach and boost credibility.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-2 h-2 bg-[#00BFFF] rounded-full mt-2"></span>
+                                    <span class="text-left w-full pl-3">Introduction of <strong class="text-white">New Features</strong> to enhance user experience and functionality.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+        
+                    <!-- Timeline Circle -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#00BFFF] rounded-full border-4 border-gray-900"></div>
+        
+                    <!-- Phase Title (Right Side) -->
+                    <div class="w-1/2 pl-10">
+                      
+                        <p class="text-3xl  text-[#00BFFF]">Expansion & Marketing</p>
+                        <h2 class="  text-2xl text-gray-400">Phase 2</h2>
+                    </div>
+                </div>
+        
+                <!-- Phase 3 -->
+                <div class="relative flex justify-between items-center">
+                    <!-- Phase Title (Left Side) -->
+                    <div class="w-1/2 text-right pr-10">
+                        <p class="text-3xl  text-[#00BFFF]">Global Adoption</p>
+                        <h2 class="  text-2xl text-gray-400">Phase 3</h2>
+                    </div>
+        
+                    <!-- Timeline Circle -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#00BFFF] rounded-full border-4 border-gray-900"></div>
+        
+                    <!-- Phase Content (Right Side) -->
+                    <div class="w-1/2 pl-10">
+                        <div class="relative bg-transparent p-6 rounded-lg shadow-lg transition-transform hover:scale-105 hover:shadow-[#00BFFF]">
+                            <ul class="mt-4 space-y-3 text-gray-300">
+                                <li class="flex items-start">
+                                    <span class="w-2 h-2 bg-[#00BFFF] rounded-full mr-3 mt-2"></span>
+                                    <span>Implementation of <strong class="text-white">Strategic Marketing</strong> to drive brand awareness and customer engagement.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-2 h-2 bg-[#00BFFF] rounded-full mr-3 mt-2"></span>
+                                    <span>Collaboration with <strong class="text-white">Influencers & Partners</strong> to expand market reach and boost credibility.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-2 h-2 bg-[#00BFFF] rounded-full mr-3 mt-2"></span>
+                                    <span>Introduction of <strong class="text-white">New Features</strong> to enhance user experience and functionality.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="max-w-2xl fade-in mx-auto mt-28">
+            <h2 class="text-3xl sniglet-regular text-center text-gray-200">Frequently Asked Questions</h2>
+            <div class="mt-6 space-y-4">
+                <div x-data="{ open: false }" class="border border-gray-700 rounded-lg">
+                    <button @click="open = !open" class="w-full flex justify-between items-center px-4 py-3 text-left text-gray-300 font-medium bg-gray-900 rounded-lg focus:outline-none">
+                        <span>What is Woofye the Agent?</span>
+                        <span x-show="!open">+</span>
+                        <span x-show="open">-</span>
+                    </button>
+                    <div x-show="open" x-transition.duration.300ms class="px-4 py-2 text-gray-400 overflow-hidden">
+                        Woofye the Agent is a cutting-edge volume bot built for the Solana blockchain, designed to generate and optimize trading volume efficiently, with a strong focus on low costs and high precision.
+                    </div>
+                </div>
+        
+                <div x-data="{ open: false }" class="border border-gray-700 rounded-lg">
+                    <button @click="open = !open" class="w-full flex justify-between items-center px-4 py-3 text-left text-gray-300 font-medium bg-gray-900 rounded-lg focus:outline-none">
+                        <span>Is using Woofye the Agent safe?</span>
+                        <span x-show="!open">+</span>
+                        <span x-show="open">-</span>
+                    </button>
+                    <div x-show="open" x-transition.duration.300ms class="px-4 py-2 text-gray-400 overflow-hidden">
+                        Yes, Woofye the Agent follows security best practices to ensure safe and reliable usage.
+                    </div>
+                </div>
+        
+                <div x-data="{ open: false }" class="border border-gray-700 rounded-lg">
+                    <button @click="open = !open" class="w-full flex justify-between items-center px-4 py-3 text-left text-gray-300 font-medium bg-gray-900 rounded-lg focus:outline-none">
+                        <span>Can Woofye the Agent manipulate markets?</span>
+                        <span x-show="!open">+</span>
+                        <span x-show="open">-</span>
+                    </button>
+                    <div x-show="open" x-transition.duration.300ms class="px-4 py-2 text-gray-400 overflow-hidden">
+                        No, the bot is designed for ethical and legal trading practices.
+                    </div>
+                </div>
+        
+                <div x-data="{ open: false }" class="border border-gray-700 rounded-lg">
+                    <button @click="open = !open" class="w-full flex justify-between items-center px-4 py-3 text-left text-gray-300 font-medium bg-gray-900 rounded-lg focus:outline-none">
+                        <span>What features does the bot offer?</span>
+                        <span x-show="!open">+</span>
+                        <span x-show="open">-</span>
+                    </button>
+                    <div x-show="open" x-transition.duration.300ms class="px-4 py-2 text-gray-400 overflow-hidden">
+                        The bot offers real-time volume optimization, low trading fees, and high precision execution.
+                    </div>
+                </div>
+        
+                <div x-data="{ open: false }" class="border border-gray-700 rounded-lg">
+                    <button @click="open = !open" class="w-full flex justify-between items-center px-4 py-3 text-left text-gray-300 font-medium bg-gray-900 rounded-lg focus:outline-none">
+                        <span>How much does it cost to use the bot?</span>
+                        <span x-show="!open">+</span>
+                        <span x-show="open">-</span>
+                    </button>
+                    <div x-show="open" x-transition.duration.300ms class="px-4 py-2 text-gray-400 overflow-hidden">
+                        The cost depends on your usage plan. Visit our pricing page for details.
+                    </div>
+                </div>
+        
+                <div x-data="{ open: false }" class="border border-gray-700 rounded-lg">
+                    <button @click="open = !open" class="w-full flex justify-between items-center px-4 py-3 text-left text-gray-300 font-medium bg-gray-900 rounded-lg focus:outline-none">
+                        <span>How do I get started with Woofye the Agent?</span>
+                        <span x-show="!open">+</span>
+                        <span x-show="open">-</span>
+                    </button>
+                    <div x-show="open" x-transition.duration.300ms class="px-4 py-2 text-gray-400 overflow-hidden">
+                        Sign up on our website, configure your settings, and start optimizing your trades.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="flex flex-col fade-in md:flex-row items-center justify-between mt-20 text-white p-10" >
+            <!-- Left Side - Image -->
+            <div class="w-full md:w-1/2 flex justify-center">
+              <img src="/Images/Image-11-1536x1536.png" alt="Promo Image" class="max-w-full h-auto object-contain">
+            </div>
+          
+            <!-- Right Side - Text Content -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+              <h2 class="text-2xl md:text-4xl sniglet-regular mb-4">
+                Secure the Future with Woofye <br> the Agent
+              </h2>
+              <p class="text-gray-400 text-xl">
+                Be at the forefront of blockchain efficiency with Woofye’s presale. 
+                Gain exclusive access to discounted WTA tokens and innovative 
+                features like the Volume Optimization Protocol (VOP) and advanced 
+                trading tools. Join a community revolutionizing Solana’s ecosystem 
+                with precision, low costs, and cutting-edge solutions. Your journey 
+                into the future of decentralized trading starts today—step into the 
+                Woofye ecosystem now!
+              </p>
+            </div>
+          </div>
+          
+        
+        
+        
+
+
+
+
+    </section>
+    <footer class="bg-[#0c0b14] fade-in text-white py-8 px-8 md:px-36">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Left Side: Disclaimer -->
+          <div>
+            <h2 class="text-xl font-semibold">Disclaimer</h2>
+            <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+              This legal disclaimer advises seeking professional advice for any doubts and clarifies that the 
+              information provided is not exhaustive nor part of a contractual agreement. While accuracy is a priority, 
+              information, services, and timelines can change without notice. The disclaimer does not create any 
+              contractual or binding commitments. Users acknowledge that the information complies with applicable laws 
+              and regulations. Cryptocurrency may be unregulated in some jurisdictions, and its value can fluctuate, 
+              with potential profits subject to taxes.
+            </p>
+          </div>
+      
+          <!-- Right Side: Social Links -->
+          <div class="flex flex-col md:items-end">
+            <h2 class="text-xl mr-10 font-semibold">Socials</h2>
+            <ul class="text-gray-400 text-sm mt-3 space-y-2">
+              <li><a href="#" class="hover:text-white transition duration-300">Twitter (X)</a></li>
+              <li><a href="#" class="hover:text-white transition duration-300">Telegram</a></li>
+              <li><a href="#" class="hover:text-white transition duration-300">CoinMarketCap</a></li>
+              <li><a href="#" class="hover:text-white transition duration-300">Linktree</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Bottom Section -->
+        <div class="border-t border-gray-700 mt-6 pt-4 flex flex-col md:flex-row items-center justify-between text-gray-400 text-sm max-w-7xl mx-auto">
+          <div class="flex items-center space-x-3">
+            <img src="/Images/nineblocks.png" alt="Logo" class="w-20 h-10"> <!-- Replace with actual logo -->
+            <span>© 2025 Nineblocks. All rights reserved.</span>
+          </div>
+          <div class="flex items-center space-x-3 mt-3 md:mt-0">
+            <span>Designed By:</span>
+            <h2 class="text-white font-medium">Hassan Mehmood</h2>
+          </div>
+        </div>
+      </footer>
+      
+      
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
